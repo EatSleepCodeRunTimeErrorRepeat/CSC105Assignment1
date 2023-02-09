@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en-TH">
+  <head>
+    <title>Simple Webpage</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon1.jpg">
+  </head>
+  <body >
+
+  <div class="header">
+    <h1 title ="This is Ryan's header.">Welcome to Ryan's Simple Webpage</h1>
+  </div>
+
+  </head>
+  <body>
+  
+  <div class="header">
+    <h1>My Favorite Foods</h1>
+    <p style="color: red;">Note the webpage should fit to any screen.</p>
+  </div>
+  
+  <div class="topnav">
+    <a href="https://github.com/">Github</a>
+    <a href="https://cscms.sit.kmutt.ac.th/">CSCMS</a>
+    <a href="#bottom" style="float:right">Bottom of Page</a>
+  </div>
+  
+  <div class="row">
+    <div class="leftcolumn">
+      <div class="card">
+        <h2>Chicken Macaroni</h2>
+        <div class="CMimg" onclick="enlargeCMing" id="img1" >
+          <button onclick="resetCMing()">Reset</button>
+        </div>
+        <h4>Ingredients</h4>
+        <ol>
+          <li>Chicken</li>
+          <li>Macaroni</li>
+          <li>Salt or MSG</li>
+          <li>Tomato paste or sauce</li>
+        </ol>
+      </div>
+      <div class="card">
+        <h2>Peanut Butter on Bread with Coffee</h2>
+        <div class="PBCimg"></div>
+        <h4>Ingredients</h4>
+        <ul>
+          <li>Peanut Butter</li>
+          <li>Bread (White or Brown)</li>
+          <li>Unsalted Butter (Personal Prefrence)</li>
+          <li>A Cup of hot Coffee</li>
+        </ul>
+        
+      </div>
+    </div>
+    <div class="rightcolumn">
+      <div class="card">
+        <h2>About Me</h2>
+        <div class="fakeimg" style="height:100px;">Image</div>
+        <p>My name is Ryan Letchman and I'm from South Africa.</p>
+      </div>
+      <div class="card">
+        <h3>Info</h3>
+        <div style="overflow-x: auto;">
+          <table>
+            <tr>
+              <th>First Name</th>
+              <th>Last Name</th>
+              <th>Age</th>
+              <th>Favorite Food</th>
+              <th>Favorite Drink</th>
+              <th>Favorite Programming Language</th>
+            </tr>
+            <tr>
+              <td>Ryan</td>
+              <td>Letchman</td>
+              <td>23</td>
+              <td>Chicken Macaroni</td>
+              <td>Coffee</td>
+              <td>HTML</td>
+            </tr>
+           
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+      img = document.getElementById("img1");
+    function enlargeCMimg() {
+        img.style.transform = "scale(1.5)";
+        img.style.transition = "transform 0.25s ease";
+    }
+    function resetCMimg() {
+       img.style.transform = "scale(1)";
+        img.style.transition = "transform 0.25s ease";
+    }
+</script>
+  <div class="footer">
+    <address>
+      Written by Ryan Letchman<br> 
+    </address>
+  </div>
+  
+  </body>
+  </html>
